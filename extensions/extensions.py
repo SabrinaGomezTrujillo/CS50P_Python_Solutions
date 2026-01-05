@@ -1,10 +1,12 @@
 file=input("Name of the file: ")
 extension=file.rsplit(".", 1)[-1].lower()
-def exc():
-    if file.startswith('.') or ' .' in file or file == "" or '.' not in file:
-        print("application/octet-stream")
-    else: return extension
-atch extension:
+
+if file.startswith('.') or ' .' in file or file == "" or '.' not in file:
+    print("application/octet-stream")
+else: extension
+
+
+match extension:
         case "gif":
             print("image/gif")
         case "jpg" | "jpeg":
