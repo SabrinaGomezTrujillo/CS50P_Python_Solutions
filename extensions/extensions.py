@@ -1,5 +1,5 @@
 file=input("Name of the file: ")
-extension=file.rsplit(".", 1)[-1].lower()
+extension=file.rsplit(".", 1)[-1].lower().replace(" ","")
 
 match extension:
         case "gif":
