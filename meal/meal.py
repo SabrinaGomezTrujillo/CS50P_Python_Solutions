@@ -1,8 +1,7 @@
 time=input("What time is it? (HH:MM): ")
 hours, minutes = map(int, time.split(":"))
 
-def convert (time):
-   return hours + minutes/60
+
 #print(hours + minutes/60)
 def main():
 
@@ -14,4 +13,8 @@ def main():
         print("It's dinner time!")
     else:
         time
+
+def convert(time):
+        return round(float(hours + minutes/60), 1)
 main()
+
