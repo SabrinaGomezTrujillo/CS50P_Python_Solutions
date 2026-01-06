@@ -19,5 +19,5 @@ def convert(time):
     minutes = int(minutes)
     return round(float(hours + minutes/60), 2)
 
-
-main()
+if __name__ == "__main__":
+    main()
