@@ -1,38 +1,18 @@
-time=input("What time is it? (HH:MM): ")
-hours, minutes = map(int, time.split(":"))
+def main():
+    time = input("What time is it? (HH:MM): ")
+
+    if 7.0 <= convert(time) <= 8.0:
+        print("It's breakfast time!")
+    elif 12 <= convert(time) <= 13:
+        print("It's lunch time!")
+    elif 18 <= convert(time) <= 19:
+        print("It's dinner time!")
+
+
 def convert(time):
-        return round(float(hours + minutes/60), 1)
+    hours, minutes = map(int, time.split(":"))
+    return round(float(hours + minutes/60), 1)
 
-if convert(time)== "__main__":
+
+if __name__ == "__main__":
     main()
-
-#print(hours + minutes/60)
-def main():
-
-    if 7.0 <= convert(time) <= 8.0:
-        print("It's breakfast time!")
-    elif 12 <= convert(time) <= 13:
-        print("It's lunch time!")
-    elif 18 <= convert(time) <= 19:
-        print("It's dinner time!")
-    else:
-        time
-
-
-main()
-
-
-#print(hours + minutes/60)
-def main():
-
-    if 7.0 <= convert(time) <= 8.0:
-        print("It's breakfast time!")
-    elif 12 <= convert(time) <= 13:
-        print("It's lunch time!")
-    elif 18 <= convert(time) <= 19:
-        print("It's dinner time!")
-    else:
-        time
-
-main()
-
