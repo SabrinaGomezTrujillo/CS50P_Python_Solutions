@@ -5,11 +5,11 @@ def main():
     time_converted = convert(time)
 
     if 7.0 <= time_converted <= 8.0:
-        print("breakfast time!")
+        print("breakfast time")
     elif 12 <= time_converted <= 13:
-        print("lunch time!")
+        print("lunch time")
     elif 18 <= time_converted <= 19:
-        print("dinner time!")
+        print("dinner time")
 
 
 
