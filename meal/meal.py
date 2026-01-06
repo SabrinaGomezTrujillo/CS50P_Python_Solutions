@@ -11,7 +11,7 @@ def main():
 
 def convert(time):
     hours, minutes = map(int, time.split(":"))
-    return round(float(hours + minutes/60), 1)
+    return round(float(hours + minutes/60), 2)
 
 
 if __name__ == "__main__":
