@@ -1,7 +1,7 @@
-def main():
+ef main():
     money=[]
     coke_v=int(50)
-    print(f"Amount of money:50")
+    print(f"Amount Due:{coke_v}")
     while True:
 
             insert=int(input("Insert Coin: "))
