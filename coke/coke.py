@@ -8,13 +8,13 @@ def main():
             money.append(insert)
             Due=int(coke_v-sum(money))
             Owe=int(sum(money)-coke_v)
-            if coin in [25, 10, 5]:
-                 amount_due -= coin
 
+            if insert not in [25, 10, 5]:
+                 print (f"Amount Due:{coke_v}")
 
-            if coke_v>Due>0:
+            elif coke_v>Due>0:
                 print(f"Amount Due: {Due}")
-            if Due<=0:
+            elif Due<=0:
                 print(f"Change Owed: {Owe}")
                 break
 main()
