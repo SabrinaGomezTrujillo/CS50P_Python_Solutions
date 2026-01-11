@@ -1,4 +1,4 @@
-ef main():
+def main():
     money=[]
     coke_v=int(50)
     print(f"Amount Due:{coke_v}")
