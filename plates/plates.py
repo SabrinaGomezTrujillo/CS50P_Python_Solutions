@@ -19,7 +19,6 @@ def is_valid(s):
         if s[i].isdigit():
             if s[i] == '0':
                 return False
-
             for j in range(i + 1, len(s)):
                 if not s[j].isdigit():
                     return False
