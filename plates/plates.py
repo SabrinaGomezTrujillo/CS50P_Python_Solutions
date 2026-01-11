@@ -13,7 +13,8 @@ def is_valid(s):
     if s in exclusiones:
         return False
     for i in range(len(s)):
-        if s[i].isdigit() and s[i]=="0" and s[i-1].isalpha:
+        if s[i].isdigit():
+        if s[i].isdigit and s[i]=="0" and s[i-1].isalpha:
             return False
     else:
          return True
