@@ -19,7 +19,7 @@ def is_valid(s):
         for j in range(i+1,len(s):
                       if not s[j].isdigit():
                         return False
-        break
-    return True
+                    break
+        return True
 
 main()
