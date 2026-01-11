@@ -9,17 +9,15 @@ def is_valid(s):
         return False
     if not s[0:2].isalpha():
         return False
-    exclusiones = ".,;:!?\"'()-[]{}¡¿ "
-    if s in exclusiones:
+    if not s.isalnum():
         return False
-    for i in range(len(s)):
+    for i in range(2, len(s)):
         if s[i].isdigit():
-            if s[i] == '0' and (i == 0 or not s[i-1].isdigit()):
+            if s[i] == '0':
                 return False
-            for j in range(i+1, len(s)):
+            for j in range(i + 1, len(s)):
                 if not s[j].isdigit():
                     return False
             break
-        return True
 
 main()
