@@ -1,7 +1,7 @@
 def main():
     money=[]
     coke_v=int(50)
-    print(f"Amount Due:{coke_v}")
+    print(f"Amount Due: {coke_v}")
     while True:
 
             insert=int(input("Insert Coin: "))
@@ -10,7 +10,7 @@ def main():
             Owe=int(sum(money)-coke_v)
 
             if insert not in [25, 10, 5]:
-                 print (f"Amount Due:{coke_v}")
+                 print (f"Amount Due: {coke_v}")
                  break
 
             elif coke_v>Due>0:
@@ -19,3 +19,4 @@ def main():
                 print(f"Change Owed: {Owe}")
                 break
 main()
+
