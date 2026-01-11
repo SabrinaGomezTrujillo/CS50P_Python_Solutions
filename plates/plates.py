@@ -9,7 +9,7 @@ def is_valid(s):
         return False
     if not s[0:2].isalpha():
         return False
-    exclusiones==[".","";",":","!","?"]
+    exclusiones = ".,;:!?\"'()-[]{}¡¿ "
     if s in exclusiones:
         return False
     for i in range(len(s)):
