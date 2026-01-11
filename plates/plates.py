@@ -4,7 +4,7 @@ def main():
         print("Valid")
     else:
         print("Invalid")
-        
+
 def is_valid(s):
     if len(s)<2 or len(s)>6:
         return False
@@ -24,5 +24,5 @@ def is_valid(s):
                 if not s[j].isdigit():
                     return False
                 break
-        return True
+    return True
 main()
