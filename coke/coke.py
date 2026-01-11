@@ -11,6 +11,7 @@ def main():
 
             if insert not in [25, 10, 5]:
                  print (f"Amount Due:{coke_v}")
+                 break
 
             elif coke_v>Due>0:
                 print(f"Amount Due: {Due}")
