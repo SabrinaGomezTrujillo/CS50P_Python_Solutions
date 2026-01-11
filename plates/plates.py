@@ -1,16 +1,18 @@
 def main():
-    plate = input("Plate: ")
+    plate = input("Plate: ").strip()
     if is_valid(plate):
         print("Valid")
     else:
         print("Invalid")
 
+
 def is_valid(s):
-    if len(s)<2 or len(s)>6:
+
+    if len(s) < 2:
         return False
-    if not s[0].isalpha():
+    if len(s) > 6:
         return False
-    if not s[1].isalpha():
+    if not s[0].isalpha() or not s[1].isalpha():
         return False
     if not s.isalnum():
         return False
@@ -22,6 +24,10 @@ def is_valid(s):
             for j in range(i + 1, len(s)):
                 if not s[j].isdigit():
                     return False
-                break
+            break
+
     return True
-main()
+
+
+if __name__ == "__main__":
+    main()
