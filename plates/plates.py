@@ -7,18 +7,18 @@ def main():
 def is_valid(s):
     if len(s)<2 or len(s)>6:
         return False
-    if not s[0].isalpha() and not s[1].isalpha():
+    if not s[0:2].isalpha():
         return False
     exclusiones = ".,;:!?\"'()-[]{}¡¿ "
     if s in exclusiones:
         return False
     for i in range(len(s)):
         if s[i].isdigit():
-        if s[i]=="0" and (s(i)=="0" or not s[i-1].isalpha):
-            return False
-        for j in range(i+1,len(s):
-                      if not s[j].isdigit():
-                        return False
+            if s[i] == '0' and (i == 0 or not s[i-1].isdigit()):
+                return False
+            for j in range(i+1, len(s)):
+                if not s[j].isdigit():
+                    return False
             break
         return True
 
