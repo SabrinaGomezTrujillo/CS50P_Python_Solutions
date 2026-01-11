@@ -21,5 +21,5 @@ def is_valid(s):
                 if not s[j].isdigit():
                     return False
                 break
-        return True
+            return True
 main()
