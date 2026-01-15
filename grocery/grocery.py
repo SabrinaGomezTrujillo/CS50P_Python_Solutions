@@ -12,5 +12,5 @@ def main():
 
     except EOFError:
         for item in sorted(pedido):
-            print(f"sorted.{pedido[item]} {item}")
+            print(f"sorted.{pedido[item]\n1")
 main()
