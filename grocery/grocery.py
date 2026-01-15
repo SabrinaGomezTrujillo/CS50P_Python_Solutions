@@ -11,7 +11,6 @@ def main():
                     pedido[item] = 1
 
     except EOFError:
-        print("\n")
         for item in sorted(pedido):
             print(f"sorted.{pedido[item]} {item}")
 main()
