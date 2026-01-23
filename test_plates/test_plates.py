@@ -1,7 +1,6 @@
 from plates import is_valid
 
 
-d
 def test_lenght_min_2():
     assert is_valid("A") == False
 
