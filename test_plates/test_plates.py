@@ -13,7 +13,7 @@ def test_first_2_alpha():
     assert is_valid("54") == False
 
 
-def test_no_symbols():
+def test_alphanum():
     assert is_valid(s="aa23") == True
     assert is_valid(s="++") == False
 
