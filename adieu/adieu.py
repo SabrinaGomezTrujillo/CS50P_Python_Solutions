@@ -10,7 +10,7 @@ def main():
             x = input("Name: ")
             aurevoir += [x]
         except EOFError:
-            print(f"Adieu, adieu to {p.join(aurevoir)}")
+            print(f"\nAdieu, adieu, to {p.join(aurevoir)}")
             break
 
 
