@@ -10,7 +10,7 @@ def test_lenght_max_6():
 
 
 def test_first_2_alpha():
-    assert is_valid("AA24") == True
+    assert is_valid("54") == False
 
 
 def test_no_symbols():
