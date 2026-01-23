@@ -14,8 +14,8 @@ def test_first_2_alpha():
 
 
 def test_no_symbols():
-    assert is_valid(s="!@@") == False
-    assert is_valid(s="+A3+") == False
+    assert is_valid(s="@@AS22") == False
+    assert is_valid(s="++AS34") == False
 
 
 def test_no_0_first():
