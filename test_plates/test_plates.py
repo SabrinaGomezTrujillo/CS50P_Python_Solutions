@@ -13,9 +13,9 @@ def test_first_2_alpha():
     assert is_valid("54") == False
 
 
-def test_alphanum():
-    assert is_valid("AA12").islapha() == True
-    assert not is_valid("@@@").isalpha() == False
+def test_alphanum_1():
+    assert is_valid("@@") == False
+
 
 def test_no_0_first():
     assert is_valid("AA0214") == False
