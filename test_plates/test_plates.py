@@ -15,7 +15,7 @@ def test_first_2_alpha():
 
 def test_no_symbols():
     assert is_valid(s="aa23") == True
-    assert is_valid(s="++AS34") == False
+    assert is_valid(s="++") == False
 
 
 def test_no_0_first():
