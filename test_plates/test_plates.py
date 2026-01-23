@@ -14,8 +14,8 @@ def test_first_2_alpha():
 
 
 def test_alphanum():
-    assert is_valid(s="aa23") == True
-    assert is_valid(s="++") == False
+    assert is_valid.islapha() == True
+    assert not is_valid.isalpha() == False
 
 
 def test_no_0_first():
