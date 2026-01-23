@@ -14,7 +14,7 @@ def test_first_2_alpha():
 
 
 def test_alphanum_1():
-    assert is_valid("@@") == False
+    assert is_valid("AA@23!") == False
 
 
 def test_no_0_first():
