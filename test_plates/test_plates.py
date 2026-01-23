@@ -14,9 +14,9 @@ def test_first_2_alpha():
 
 
 def test_no_symbols():
-    assert is_valid("@#@@@") == False
-    assert is_valid("%%%%%") == False
-    assert is_valid("+++") == False
+    assert is_valid("!@@") == False
+    assert is_valid("%%%") == False
+    assert is_valid("+A3+") == False
 
 
 def test_no_0_first():
