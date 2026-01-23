@@ -13,7 +13,7 @@ def test_first_2_alpha():
     assert is_valid("54") == False
 
 
-def test_alphanum_1():
+def test_alphanum():
     assert is_valid("AA@23!") == False
 
 
