@@ -14,10 +14,11 @@ def is_valid(s):
         return False
 
     if not s[0].isalpha() or not s[1].isalpha():
-        return False
+        raise ValueError
+
 
     if not s.isalnum():
-        return False
+      raise ValueError
 
     for i in range(len(s)):
         if s[i].isdigit():

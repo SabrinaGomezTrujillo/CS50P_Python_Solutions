@@ -10,10 +10,11 @@ def test_lenght_max_6():
 
 
 def test_first_2_alpha():
-    assert is_valid("23AA24") == False
+    
+    assert is_valid("23AA24") == TypeError
 
 def test_no_symbols():
-    assert is_valid("@A#21$") == False
+    assert is_valid("@A#21$") ==
 
 
 def test_no_0_first():
