@@ -1,6 +1,7 @@
 from plates import is_valid
 
 
+d
 def test_lenght_min_2():
     assert is_valid("A") == False
 
@@ -10,13 +11,11 @@ def test_lenght_max_6():
 
 
 def test_first_2_alpha():
-    with pytest.raises(TypeError):
-        is_valid("23AA24")
+    assert is_valid("AA24") == True
 
 
 def test_no_symbols():
-    with pytest.raises(TypeError):
-        is_valid("#$#$%#")
+    assert is_valid("@A#21$") == False
 
 
 def test_no_0_first():
