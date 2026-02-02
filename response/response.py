@@ -9,7 +9,6 @@ def main():
 def validation(s):
     try:
         email = validators.email(s)
-        print(email)
         if checkers.is_email(email):
             return "Valid"
     except errors.InvalidEmailError:
