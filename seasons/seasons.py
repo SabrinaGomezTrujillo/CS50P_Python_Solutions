@@ -5,9 +5,10 @@ import num2words
 
 def main():
 
-    print(
-        f"{conv_text(validate_date(input("Date of birth: ")))}"
-    )
+    dob=input("Date of birth: ")
+    total_minutos = validate_date(dob)
+    print(f"{conv_text(total_minutos)}")
+
 
 
 def validate_date(dob):
