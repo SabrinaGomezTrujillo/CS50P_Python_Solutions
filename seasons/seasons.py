@@ -14,17 +14,16 @@ def main():
 def validate_date(dob):
     try:
         dob = datetime.strptime(dob, "%Y-%m-%d").date()
-    except ValueError:
-        print("Invalid date")
-        sys.exit(1)
-    # replace_words = calc_minutos(dob)
-
-    if dob:
         fecha1 = datetime.combine(dob, time.min)
         fecha2 = datetime.combine(date.today(), time.min)  # imprime la fecha de hoy a las 00:00:00
         delta = fecha2 - fecha1
         total_minutos = delta.total_seconds() / 60  # segundos en un minuto = 60
         return total_minutos
+    except ValueError:
+        print("Invalid date")
+        sys.exit(1)
+    # replace_words = calc_minutos(dob)
+
 
 def conv_text(total_minutos):
     num2words.num2words(total_minutos, lang="en")
