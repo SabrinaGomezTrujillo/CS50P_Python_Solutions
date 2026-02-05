@@ -23,7 +23,8 @@ def validate_date(dob):
         date.today(), time.min
     )  # imprime la fecha de hoy a las 00:00:00
     delta = fecha2 - fecha1
-    total_minutos = round(delta.total_seconds() // 60,0)  # segundos en un minuto = 60
+    total_minutos = round(delta.total_seconds() // 60)
+    print(total_minutos)  # segundos en un minuto = 60
     return total_minutos
 
 
