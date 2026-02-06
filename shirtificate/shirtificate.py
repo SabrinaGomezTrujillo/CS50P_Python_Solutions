@@ -21,7 +21,7 @@ class PDF(FPDF):
         y_pos = 70
 
         self.image(
-            "/home/sabri/Escritorio/PYTHON/oop/shirtificate.png",
+            "shirtificate.png",
             x=x_pos,
             y=y_pos,
             w=box_width,
